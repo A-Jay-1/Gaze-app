@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer>
             <div className="footerButton">
-                <button className="buttonStyleFooter">Sign up today!!</button>
-            </div>
-            <div>
-                <p>Social media icons</p>
-                <p>email address for support</p>
+                <Link to="/signup">
+                    {" "}
+                    <button className="buttonStyleFooter">
+                        Sign up today!!
+                    </button>
+                </Link>
             </div>
         </footer>
     );
