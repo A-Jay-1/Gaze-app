@@ -1,7 +1,7 @@
-import photo1 from "C:/Users/LENOVO/OneDrive/Documents/Gaze/my-app/src/Images/sunil-damor-SHJ5gqk2myE-unsplash.jpg";
-import photo2 from "C:/Users/LENOVO/OneDrive/Documents/Gaze/my-app/src/Images/richard-jaimes-s97-KYat9sA-unsplash.jpg";
-import photo3 from "C:/Users/LENOVO/OneDrive/Documents/Gaze/my-app/src/Images/robbie-down-f3vwAXn7pgg-unsplash.jpg";
-import photo4 from "C:/Users/LENOVO/OneDrive/Documents/Gaze/my-app/src/Images/mika-ruusunen-W0i1N6FdCWA-unsplash.jpg";
+import photo1 from "../../Images/sunil-damor-SHJ5gqk2myE-unsplash.jpg";
+import photo2 from "../../Images/richard-jaimes-s97-KYat9sA-unsplash.jpg";
+import photo3 from "../../Images/robbie-down-f3vwAXn7pgg-unsplash.jpg";
+import photo4 from "../../Images/mika-ruusunen-W0i1N6FdCWA-unsplash.jpg";
 /* import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
@@ -87,24 +87,19 @@ export default function Grid() {
     return (
         <div class="container">
             <div class="card">
-                <img src={photo1}/>
-                
+                <img src={photo1} />
             </div>
             <div class="card">
                 <img src={photo2} />
-                
             </div>
             <div class="card">
                 <img src={photo3} />
-                
             </div>
             <div class="card">
                 <img src={photo4} />
-                
             </div>
             <div class="card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg" />
-               
             </div>
         </div>
     );
