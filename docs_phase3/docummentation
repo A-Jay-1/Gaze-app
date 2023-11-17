@@ -1,1 +1,2 @@
-
+Refer to the attached credentials.json file in uploaded in the ATLAS window
+Paste this file in the gaze-backend directory to allow connection to the MongoDB database.
