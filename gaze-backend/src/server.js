@@ -9,34 +9,7 @@ import * as path from "path";
 function isEmpty(obj) {
     return Object.keys(obj || {}).length === 0;
 }
-/*import bodyParser from "body-parser";
- import {MongoClient} from 'mongodb' 
- app.use( bodyParser.json() );*/
-// const mongoose = require('mongoose')
 
-/* let accountInfo = [ {
-        id: '1',
-        name: 'David Webb',
-        upvotes: 0,
-        comments: [],
-    }, {
-        id: '2',
-        name:'Jason Bourne',
-        upvotes: 0,
-        comments: [],
-    },  {
-        id: '3',
-        name: 'Denzel Washington',
-        upvotes: 0,
-        comments: [],
-    },{
-        id: '4',
-        name: 'Jackie Chan',
-        upvotes: 0,
-        comments: [],
-    }
-];
- */
 const __filename = url.fileURLToPath(import.meta.url);
 // to get the current parent directory
 const cwd = process.cwd();
@@ -141,23 +114,6 @@ app.get("/api/accountsList", async (req, res) => {
     // Send the accounts as a JSON response
     res.json(accounts);
 });
-
-// // endpoint to view each account
-// app.get("/api/accountsList/:id", async (req, res) => {
-//     const { id } = req.params;
-//     // console.log(req.user)
-//     const { uid } = req.user;
-
-//     const userAccount = await Account.findOne({ uid: id });
-//     if (!isEmpty(userAccount)) {
-//         const upvoteIds = userAccount?.upvoteIds || [];
-//         // console.log(upvoteIds)
-//         userAccount.canUpvote = uid && !upvoteIds.includes(uid);
-//         res.json(userAccount);
-//     } else {
-//         res.sendStatus(404);
-//     }
-// });
 
 // upvote endpoint
 app.put("/api/accountsList/:id/upvote", async (req, res) => {
