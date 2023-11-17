@@ -1,0 +1,3 @@
+1. Refer to the README file for installation guide
+2. In the Github folder, a credentials.json file is present. This contains sensitive data relating to the database.
+3. Add this file to the gaze-backend directory before starting the backend server.
